@@ -30,7 +30,7 @@ void remove_client(client_node_t *p) {
   }
 }
 void log_message(FILE *fp, char *name, char *buf) {
-  fp = fopen("./chatlog.txt", "a");
+  fp = fopen("./chatlog.log", "a");
   if (fp == NULL) {
     printf("fopen error");
     return;
